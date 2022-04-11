@@ -347,6 +347,12 @@ Cars[wheel];
 
 // JS METHODS
 //Definition
+const dev={
+    id: Emma,
+    place: Abuja,
+    
+
+}
 
 
 //adding method to an object/some js inbuilt methods

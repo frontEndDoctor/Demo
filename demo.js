@@ -326,10 +326,10 @@
 //Definition
 // How to create JS Objects
 // // 1. Using Object Literal
-const Cars ={
-    type:"Toyota-Tundra",
-    wheel: 4
-}
+// const Cars ={
+//     type:"Toyota-Tundra",
+//     wheel: 4
+// }
 
 // // 2. Using  "new" keyword
 ////const Cars = new Object();
@@ -339,21 +339,33 @@ const Cars ={
 
 // Acessing Object Values 
 // // 1.  Using dot notation
-console.log (Cars.wheel);
-Cars[wheel];
+// console.log (Cars.wheel);
+// Cars[wheel];
 
 // // 2. Bracket notation using object key
 
 
 // JS METHODS
 //Definition
-const dev={
-    id: Emma,
-    place: Abuja,
-    
+// const dev ={
+//     id: "Emma",
+//     place: "Abuja",
+//     welcome: function greet() {
+//         console.log("Hi, I am a Developer");
+        
+//     },
+//     skills:{
+//         php: "very good",
+//         python: "not so good",
+//         js: "excellent!"
 
-}
+//     }
 
+
+// }
+// const { id: "Emma", place: "Abuja"} = dev;
+// console.log(dev.skills.python);
+// dev.welcome();
 
 //adding method to an object/some js inbuilt methods
 
@@ -365,29 +377,106 @@ const dev={
 // Copied texts will be rejected
 
 
-//
-
-
-
-
-
-
 
 
 //Wednesday
-// Some ES6 Operations
+// Some ES6 Operation
 //Arrow function
-//Map
+// function sum(x,y) {
+//     return x+y;
+// }
+//console.log(sum(2,8))
+// let sum = (x,y) => x+y;
+// console.log(sum(2,8))
+// function msg() {
+//     console.log("Hello World!")
+// }
+// msg();
+
+let msg = () => console.log("Hello World!");
+import demo2 from "./demo2";
+//console.log(sum(2,8))
+// let sum = (x,y) => x+y;
+// console.log(sum(2,8))
+
+
+//Assignment: Explain Map in ES6, its syntax and 5 methods(each)
+
 // JS destructuring
+// const dev ={
+//     person: "Emma",
+//     country: "Canada",
+//     gender:"male"
+// }
+// console.log(dev);
+
+// let {person,country,gender} = dev;
+
+// console.log(person);
+
+
+
+
+
 // JS Classes
+// function dev(){
+//     this.person = "Emma",
+//     this. country = " Canada"
+// }
+// const dev2 = new dev();
+
+// class  dev{
+//     constructor(person){
+//         this.person = person
+//     }
+// };
+
+// const dev2 = new dev('Toochi');
+// console.log(dev2.person);
+
+import dev from demo2;
+
+
 //JS Inheritance
+
+
+
+
 //JS Import and Export
 //JS Promise
+let pro = new Promise()
 // JS Proxies
+let m = new Proxy(target, handler)
 
 // Assignment
 
 
+
+
+
+
+
 //Friday
 // Intro to HTML DOM-JQuery
+
+
+
+
+
+
 //Assignment: Drop down menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+var change = document.getElementById("start").innerHTML = " Welcome to my page";
+

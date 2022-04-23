@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Demo</title>
 </head>
-<body>
+<body id="random">
     <header>
         <nav>
             <ul>
@@ -17,15 +17,26 @@
             </ul>
         </nav>
         <h1 id="start"> Hi!<br> This  is Talk2Her Official Website</h1>
-        <h1> Hello!<br> This  is Anhydrase Tech</h1>
-        <h1> Yo!<br> I'm a Tech Ninja!</h1>
+        <!-- <h1> Hello!<br> This  is Anhydrase Tech</h1>
+        <h1> Yo!<br> I'm a Tech Ninja!</h1> -->
          <img class ="image" src="./thb.png" >
         
 
     </header>
-    <div  class="parent">
-        <div id="try">
-            <div class="first">
+
+   <!-- <form id="frm" onsubmit="validate()" method="post">
+        <label>Email</label>
+        <input type="email" required>
+        <label>Password</label> 
+        <input type="password">
+        <button type="submit" > Ok</button>
+
+    </form> -->
+
+    <div  class="parent" id="demo">
+       
+        <div  id="try">
+            <div class="first"  id="exact">
                 <h3> Who we are</h3>
                 <picture>
                     <img  src="./mkt.jpg">
@@ -36,6 +47,7 @@
                     optio velit ducimus veritatis reiciendis deleniti voluptate.
                     
                 </p>
+                <i>Random text</i>
             </div>
             <div class="second">
                 <h3> What we Do</h3>
@@ -48,6 +60,7 @@
                     Aliquam totam delectus, unde, assumenda fugit sed a, 
                     optio velit ducimus veritatis reiciendis deleniti voluptate.
                 </p>
+                <i>Random text</i>
 
             </div>
             <div class="third">
@@ -61,6 +74,7 @@
                     Aliquam totam delectus, unde, assumenda fugit sed a, 
                     optio velit ducimus veritatis reiciendis deleniti voluptate.
                 </p>
+                <i>Random text</i>
 
             </div>
         
@@ -69,18 +83,55 @@
       
     </div>
        
-    <footer>
+    <footer id="close">
         Thanks for coming 
     </footer>
 <script>
         
-    //    var change = docment.getElementsByTagName("p");
-    //    change.innerHTML ="Welcome to my page";
-    //    document.getElementById("try").innerHTML = " We are trying to change "+ change.innerHTML;
+    // var change = document.getElementsByTagName("p");
+    // change.innerHTML ="Welcome to my page";
+    // document.getElementById("try").innerHTML = " We are trying to change "+ change.innerHTML;
        
-    //  var change2 = document.getElementsByClassName("first");
-    //  change2.innerHTML = "Random text";
-    // document.getElementById("try").innerHTML = "This is  "+ change2.innerHTML;
+    let change2 = document.getElementsByTagName("footer");
+    change2.innerHTML = "About Us";
+    document.getElementsById("").innerHTML = change2.innerHTML;
+
+// document.getElementById("try").innerHTML = "This is  "+ change2.innerHTML;
+
+
+    // HTML DOM Object Collection
+    // Images
+    //Ex: Getting images
+// var images = document.getElementsByTagName("img");
+// document.getElementById("demo").innerHTML = "There are"+ images.length + " images on this page";  
+
+    
+    //Form
+    // function validate() {
+    //     let user = document.form["email"].value;
+    //     if (user!== "xyz@gmail.com") {
+    //         alert ("not accepted");
+    //         return false;
+    //     }
+    // }
+    
+
+
+    //DOM CSS & ANIMATION
+    // document.getElementById("random").style.fontSize = "50px";
+
+    //DOM Events
+    //on-click
+    // document.getElementById().onclick =
+    // function replaceImage(id) {
+    //     id.innerHTML ="This text replaced the image";
+    // }
+    //on-load
+    //mouseover
+
+    //Event handlers
+    //addEventListener()
+    
 </script>
 <script src="demo.js"></script>
 

@@ -393,8 +393,8 @@
 // }
 // msg();
 
-let msg = () => console.log("Hello World!");
-import demo2 from "./demo2";
+// let msg = () => console.log("Hello World!");
+// import demo2 from "./demo2";
 //console.log(sum(2,8))
 // let sum = (x,y) => x+y;
 // console.log(sum(2,8))
@@ -434,7 +434,6 @@ import demo2 from "./demo2";
 // const dev2 = new dev('Toochi');
 // console.log(dev2.person);
 
-import dev from demo2;
 
 
 //JS Inheritance
@@ -444,9 +443,9 @@ import dev from demo2;
 
 //JS Import and Export
 //JS Promise
-let pro = new Promise()
+// let pro = new Promise()
 // JS Proxies
-let m = new Proxy(target, handler)
+// let m = new Proxy(target, handler)
 
 // Assignment
 
@@ -478,5 +477,5 @@ let m = new Proxy(target, handler)
 
 
 
-var change = document.getElementById("start").innerHTML = " Welcome to my page";
+// var change = document.getElementById("start").innerHTML = " Welcome to my page";
 

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+
+    </script> 
     <title>Demo</title>
 </head>
 <body id="random">
@@ -23,15 +27,27 @@
         
 
     </header>
+    <div id="coding"> 
+        <form id="frm"  method="post">
+            <label>Email</label>
+            <input id="em" type="email" > <br>
+            <label>Password</label> 
+            <input  id="pw" type="password"><br><br>
+            <button type="submit" onclick="validate()" > Ok</button>
+    
+        </form>
 
-   <!-- <form id="frm" onsubmit="validate()" method="post">
-        <label>Email</label>
-        <input type="email" required>
-        <label>Password</label> 
-        <input type="password">
-        <button type="submit" > Ok</button>
 
-    </form> -->
+    <label> Programming Languages</label>
+        <ul>
+            <li> Python</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li> Go lang</li>
+        </ul>
+        <input id="btn" type="button"  value="Add New" onclick="newLang()">
+    </div>
+   
 
     <div  class="parent" id="demo">
        
@@ -68,7 +84,7 @@
                 <picture>
                     <img  src="./mkt.jpg">
                 </picture>
-                <p> This is the third column
+                <p id="new">  This is the third column
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Sapiente voluptates iste excepturi quos, itaque consequatur?
                     Aliquam totam delectus, unde, assumenda fugit sed a, 
@@ -92,9 +108,9 @@
     // change.innerHTML ="Welcome to my page";
     // document.getElementById("try").innerHTML = " We are trying to change "+ change.innerHTML;
        
-    let change2 = document.getElementsByTagName("footer");
-    change2.innerHTML = "About Us";
-    document.getElementsById("").innerHTML = change2.innerHTML;
+    // let change2 = document.getElementsByTagName("footer");
+    // change2.innerHTML = "About Us";
+    // document.getElementsById("").innerHTML = change2.innerHTML;
 
 // document.getElementById("try").innerHTML = "This is  "+ change2.innerHTML;
 
@@ -131,6 +147,47 @@
 
     //Event handlers
     //addEventListener()
+
+
+
+
+
+
+
+
+
+//jQuery
+//$("#id").remove()
+// $("#new").text("I changed this content");
+// var par = $("#new").text();
+// console.log(par);
+// $("#new").remove();
+// function newLang(){
+// $("#coding ul").append("<li>JS<li/>");
+// }
+$("btn").css("background-color", "blue");
+$("btn").css("color", "white");
+$("btn").css("border-radius", "5px");
+// document.getElementById("btn").style.backgroundColor= "blue";
+$("form").css("float", "right");
+
+function validate() {
+    if ($("#em").val() ==[] || $("#pw").val()==[]){
+        alert(" incomplete");
+    }
+}
+
+
+    
+// this.add = function (newtask) {
+// 	// console.log(newtask.name)
+// 	var task ={};
+// 	task.name=newtask.name;
+// 	task.done= false;
+// 	this.tasks.push(task);
+// 	newtask.name="";
+
+// };
     
 </script>
 <script src="demo.js"></script>
